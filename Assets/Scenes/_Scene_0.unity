@@ -341,7 +341,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511690225}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 3
@@ -359,12 +359,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 2315359706945969191, guid: ee45fc022fcfa4de8abd1d5986175cd4, type: 3}
-  velocityMult: 15
+  velocityMult: 10
   launchPoint: {fileID: 0}
   launchPos: {x: 0, y: 0, z: 0}
   projectile: {fileID: 2315359706945969191, guid: ee45fc022fcfa4de8abd1d5986175cd4, type: 3}
   aimingMode: 0
-  projectileRigidbody: {fileID: 0}
 --- !u!1 &521832798
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +754,7 @@ LineRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_MotionVectors: 0
+  m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
@@ -786,7 +785,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -850,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820313810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1088,9 +1087,9 @@ MonoBehaviour:
   castlePos: {x: 50, y: -9.5, z: 0}
   castles:
   - {fileID: 6791333214933333878, guid: 4abdc1995cb32447aad257ea7a0b99cc, type: 3}
-  - {fileID: 6791333214933333878, guid: 76e13d8d883fe43188a0fb2f82cdaf8a, type: 3}
   - {fileID: 6791333214933333878, guid: 89bdf31655a6a4752b3b5d5811838ed7, type: 3}
   - {fileID: 6791333214933333878, guid: 3fa59245b0b574b649abc2f4f75e47af, type: 3}
+  - {fileID: 6791333214933333878, guid: 76e13d8d883fe43188a0fb2f82cdaf8a, type: 3}
   level: 0
   levelMax: 0
   shotsTaken: 0

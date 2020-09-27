@@ -16,7 +16,7 @@ public class Slingshot : MonoBehaviour
 	public Vector3		launchPos;
 	public GameObject 		projectile;
 	public bool 		aimingMode;
-	public Rigidbody 		projectileRigidbody;
+	private Rigidbody 		projectileRigidbody;
 
 	static public Vector3 LAUNCH_POS {
 		get {
@@ -26,6 +26,7 @@ public class Slingshot : MonoBehaviour
 	}
 	
 	void Awake() {
+		S = this;
 		Transform launchPointTrans = transform.Find("LaunchPoint");
 		launchPoint = launchPointTrans.gameObject;
 		launchPoint.SetActive(false);
@@ -50,7 +51,7 @@ public class Slingshot : MonoBehaviour
 		// start it at launchPoint 
 		projectile.transform.position = launchPos;
 		// set it to isKinematic for now 
-		projectile.GetComponent<Rigidbody>().isKinematic = true;
+		//projectile.GetComponent<Rigidbody>().isKinematic = true;
 		// set it to isKinematic for now
 		projectileRigidbody = projectile.GetComponent<Rigidbody>();
 		projectileRigidbody.isKinematic = true;

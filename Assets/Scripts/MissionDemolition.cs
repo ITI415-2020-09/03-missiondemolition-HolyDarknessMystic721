@@ -87,7 +87,7 @@ public class MissionDemolition : MonoBehaviour
         	SwitchView("Show Both");
 
         	// start the next level in  seconds
-        	Invoke("Next Level", 2f);
+        	Invoke("NextLevel", 2f);
         }
     }
 
